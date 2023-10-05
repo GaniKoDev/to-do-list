@@ -52,3 +52,21 @@ body{
     background: transparent;
     
 }
+input{
+
+    padding: 5px;
+    flex: 1;
+    border: 4px;
+    
+    border-color: black;
+    outline: none;
+    background: transparent;
+    font-weight: 14px ;
+    border-style: inset;
+  
+}
+
+button{
+
+    margin-left: 100%;
+}
