@@ -1,0 +1,54 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+   
+    
+
+    
+    
+
+}
+
+body{
+
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+}
+
+.container {
+
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
+
+}
+
+.toDoApp{
+
+    width:100%;
+    background: white;
+    max-width: 550px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    
+
+}
+
+.toDoApp h2{
+
+    background: transparent;
+
+}
+.toDoApp h2 img{
+
+    background: transparent;
+    
+}
