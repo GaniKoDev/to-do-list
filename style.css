@@ -33,7 +33,7 @@ body{
 .toDoApp{
 
     width:100%;
-    background: white;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     max-width: 550px;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -45,7 +45,7 @@ body{
 .toDoApp h2{
 
     background: transparent;
-
+    
 }
 .toDoApp h2 img{
 
@@ -69,4 +69,5 @@ input{
 button{
 
     margin-left: 100%;
+    border-radius: 40px;
 }
