@@ -23,7 +23,7 @@ function addTask() {
   } */
 
 
-  let taskFormDom = document.querySelector('#taskForm')
+ /*  let taskFormDom = document.querySelector('#taskForm')
 
   taskFormDom.addEventListener('submit',formSubmit)
 
@@ -45,5 +45,77 @@ function addTask() {
     liDom.innerHTML = `${task}`
     taskContainerDom.append(liDom)
 
-  }
+  } */
  
+
+/*   let taskListDom = document.querySelector('#taskList')
+  taskListDom.addEventListener('submit',addFunction)
+
+
+
+function addFunction(event){
+
+    event.preventDefault();
+    console.log('it is ok')
+    let itemDom = document.querySelector('#item')
+    console.log(itemDom.value)
+    localStorage.setItem('item',itemDom)
+    addItem(itemDom.value)
+    
+
+}
+
+let shoppingListDom = document.querySelector('#shoppingList')
+
+function addItem(item){
+
+    let liDom = document.createElement('li')
+    liDom.innerHTML = `${item}`
+    shoppingListDom.appendChild(liDom)
+
+
+
+} */
+
+
+
+    let formListDom = document.querySelector('#formList')
+    formListDom.addEventListener('submit',addFunction)
+
+    function addFunction(event){
+
+        event.preventDefault();
+/*         console.log('it is ok')
+ */        let itemDom = document.querySelector('#item')
+
+        if(item.value){
+
+            addItem(itemDom.value)
+            
+           
+
+        }  else {
+            console.log('hatali giris')
+        }
+
+        
+
+        console.log(itemDom.value)
+        localStorage.setItem('item',itemDom.value)
+        /* addItem(itemDom.value) */
+        itemDom.value=""
+
+
+    }
+
+    let shoppingListDom = document.querySelector('#shoppingList')
+
+    function addItem(x){
+
+        let liDom = document.createElement('li')
+        liDom.innerHTML = `${x}`
+        shoppingListDom.append(liDom)
+
+    }
+
+
