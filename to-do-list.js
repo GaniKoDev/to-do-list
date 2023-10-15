@@ -112,8 +112,7 @@ function addItem(item){
 
         console.log(itemDom.value)
         localStorage.setItem('item',itemDom.value)
-        /* addItem(itemDom.value) */
-        
+       
         itemDom.value="" //reset inside input 
 
 
@@ -122,11 +121,17 @@ function addItem(item){
     let shoppingListDom = document.querySelector('#shoppingList')
 
     function addItem(x){
+        let liDom = document.createElement('li') //create li
+        let closeBtnDom = document.createElement('button')
+        let btnInfoDom = document.createTextNode("X")
+        closeBtnDom.appendChild(btnInfoDom)
 
-        let liDom = document.createElement('li')
-        liDom.innerHTML = `${x}`
-        shoppingListDom.append(liDom)
+           liDom.innerHTML = `${x}`  // get item value 
+          
+           shoppingListDom.append(liDom)
+           liDom.appendChild(closeBtnDom)
+    
+        }
 
-    }
 
 
