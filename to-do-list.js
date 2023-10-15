@@ -97,10 +97,23 @@ function addItem(item){
 /*         console.log('it is ok')
  */        let itemDom = document.querySelector('#item')
 
+        
+
+
+        
+
         if(item.value){
 
             addItem(itemDom.value)
+
             
+
+          
+
+            
+            
+
+
            
 
         }  else {
@@ -116,22 +129,46 @@ function addItem(item){
         itemDom.value="" //reset inside input 
 
 
+
     }
 
     let shoppingListDom = document.querySelector('#shoppingList')
 
+    
+    // adding item value and x button function
+    
     function addItem(x){
+        
         let liDom = document.createElement('li') //create li
+        liDom.innerHTML = `${x}`  // get item value 
+
+        
         let closeBtnDom = document.createElement('button')
+        closeBtnDom.className=("remove")
         let btnInfoDom = document.createTextNode("X")
+
         closeBtnDom.appendChild(btnInfoDom)
 
-           liDom.innerHTML = `${x}`  // get item value 
           
            shoppingListDom.append(liDom)
            liDom.appendChild(closeBtnDom)
-    
+
+          
+
+          
+        }
+
+        
+
+        function remove (event) {
+            if(event.target.type == 'submit') {
+                event.target.parentElement.remove();
+            }
         }
 
 
+   
 
+
+
+        

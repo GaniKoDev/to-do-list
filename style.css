@@ -112,8 +112,8 @@ ul li{
 
 }
 
-.btn {
+.remove {
 
-    color: blue;
-    display: center;
+    color: rgb(70, 36, 0);
+    display: right ;
 }
